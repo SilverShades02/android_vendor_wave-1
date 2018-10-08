@@ -7,10 +7,10 @@ PRODUCT_PACKAGES += \
     LiveWallpapersPicker \
     messaging
 
-#ifeq ($(AOSIP_BUILDTYPE), Official)
-#    PRODUCT_PACKAGES += \
-#        Updater
-#endif
+ifeq ($(WAVE_BUILD_TYPE), OFFICIAL)
+    PRODUCT_PACKAGES += \
+        Updater
+endif
 
 # Turbo
 PRODUCT_PACKAGES += \
